@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translayte</title>
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="./src/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <!-- =====| Header start |===== -->
+    <header id="header" class="header relative ms-4 lg:ms-0 py-4 lg:py-0">
+        <!-- mobile navbar -->
+        <div class="container">
+            <nav id="mobileNav" class="flex items-center justify-between lg:hidden">
+                <div class="menu_icon z-[99999]">
+                    <span class=" bars text-3xl text-primary ms-1 "><i class="fa-solid fa-bars"></i></span>
+                    <span class=" times hidden text-3xl text-primary px-2 border border-primary rounded-full"><i class="fa-solid fa-times"></i></span>
+                </div>
+                <div class="logo lg:hidden">
+                    <a href="#"><img src="./src/img/mobile_logo.svg" class="md:w-4/5 xl:w-full"/></a>
+                </div> 
+                <form action="" class="language_picker_form">
+                    <select name="language-picker-select" id="language-picker-select" class="border-0 p-2 focus:border-none focus:ring-0">
+                      <option lang="en" value="english" selected>EN</option>
+                      <option lang="de" value="deutsch">DE</option>
+                      <option lang="fr" value="francais">FR</option>
+                    </select>
+                </form>
+            </nav>
+        </div>
+       <div class="navbar_wrapper flex flex-col gap-y-[17px] lg:gap-y-0 lg:static absolute top-0 -left-full w-[60vw] lg:w-auto bg-white z-[99998] min-h-screen lg:min-h-fit transition-all ease-out duration-500">
+         <!-- =====| topNavbar start |===== -->
+         <nav class="topNavbar bg-white pt-[78px] lg:pt-0 ms-2 lg:ms-0">
+            <div class="row">
+                <div class="container">
+                    <div class="col flex items-center lg:justify-end lg:py-5">
+                        <div class="topNavItem flex flex-col lg:flex-row items-center gap-x-[45px] gap-y-[17px] text-primary font-inter text-[12px] xl:text-[12px] lg:text-[10px] xl:text-xs font-semibold leading-[24px]">
+                            <a href="#">About</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Contact</a>
+                            <a href="#">Sign in</a>
+                            <a href="#" class="hidden lg:inline-block">
+                                <form action="" class="language_picker_form">
+                                    <select name="language-picker-select" id="language-picker-select" class="border-0 p-2 focus:border-none focus:ring-0">
+                                      <option lang="en" value="english" selected>EN</option>
+                                      <option lang="de" value="deutsch">DE</option>
+                                      <option lang="fr" value="francais">FR</option>
+                                    </select>
+                                </form>                                
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </nav>
+        <!-- =====| topNavbar end |===== -->
+        <!-- =====| bottomNavbar start |===== -->
+        <nav id="bottomNavbar" class="bottomNavbar lg:bg-secondery ms-2 lg:ms-0">
+            <div class="row">
+                <div class="container flex flex-col-reverse lg:flex-row lg:items-center justify-between gap-y-6">
+                    <div class="col inline-flex items-center py-6 gap-10">
+                        <div class="logo hidden lg:block">
+                            <img src="./src/img/logo.svg" class="md:w-4/5 xl:w-full"/>
+                        </div> 
+                        <div class="cardBtn flex items-center gap-4">
+                            <a href="#" class="text-white text-center font-inter text-[15px] lg:text-[10px] xl:text-[15px] font-semibold leading-[24px] py-2 xl:py-4 px-3 xl:px-5  rounded-full bg-primary hover:bg-thirdly transition-all ease-linear duration-500">Personal</a>
+                            <a href="#"><span class="text-primary font-inter text-[15px] lg:text-[10px] xl:text-[15px] leading-[24px] font-semibold">Business</span></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="bottomNavItem inline-flex flex-col lg:flex-row lg:items-center gap-[17px]">
+                            <a href="#" class="text-primary font-inter text-[15px] lg:text-[10px] xl:text-[15px] leading-[24px] font-semibold">Certified Translations</a>
+                            <a href="#" class="text-primary font-inter text-[15px] lg:text-[10px] xl:text-[15px] leading-[24px] font-semibold">Professional Translations</a>
+                            <a href="#" class="text-primary font-inter text-[15px] lg:text-[10px] xl:text-[15px] leading-[24px] font-semibold">Languages</a>
+                            <a href="#" class="text-primary font-inter text-[15px] lg:text-[10px] xl:text-[15px] leading-[24px] font-semibold">Documents</a>
+                            <a href="#" class="text-white text-center font-inter text-[15px] lg:text-[10px] xl:text-[15px] font-semibold leading-[24px] py-2 px-3 xl:py-4 xl:px-5  rounded-full bg-primary hover:bg-primary transition-all ease-linear duration-500">Check Prices & Order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+       </div>
+    </header>    
+    <!-- =====| Header end |===== --> 
+    <!-- =====| Hero start |===== -->
+    <section id="hero" class="hero bg-secondery pt-[86px] pb-[63px]">
+        <div class="row">
+            <div class="container flex flex-col lg:flex-row justify-center items-center gap-x-2 gap-y-17">
+                <div class="col lg:w-[42vw]">
+                    <div class="trustpilot flex items-center gap-3 mb-[31px]">
+                        <div class="avatar_grp flex -space-x-3">
+                            <img src="./src/img/avtr_1.png" alt="img" class="w-[30px] h-[30px] rounded-full border border-white">
+                            <img src="./src/img/avtr_2.png" alt="img" class="w-[30px] h-[30px] rounded-full border border-white">
+                            <img src="./src/img/avtr_1.png" alt="img" class="w-[30px] h-[30px] rounded-full border border-white">
+                            <img src="./src/img/avtr_2.png" alt="img" class="w-[30px] h-[30px] rounded-full border border-white">
+                        </div>
+                        <p class="text-primary font-inter text-base font-normal">4,005 Reviews | Rated Excellent</p>
+                        <img src="./src/img/logo-white 1.png" alt="trustpilot_logo">
+                    </div>
+                    <h1 class="text-[38px] lg:text-[60px] font-bold leading-[45px] lg:leading-[65px] font-sans text-primary max-w-[400px] lg:max-w-[800px] mb-5">Trusted Translations for Life's Biggest Journeys.</h1>
+                    <p class="max-w-[500px] text-primary font-inter text-[20px] font-normal leading-[150%] mb-[17px]">
+                        20+ years experience. Thousands of happy clients. 130+ translation languages.
+                    </p>
+                    <div class="hero_services mb-[37px]">
+                        <div class="hero_services_item flex gap-3 mb-[10px]">
+                            <span class="h-[25px] w-[25px] rounded-full bg-thirdly text-white text-center leading-[25px]"><i class="fa-solid fa-check"></i></span>
+                            <span class="text-primary font-inter text-base font-semibold">Certified & Sworn Translations</span>
+                        </div>
+                        <div class="hero_services_item flex gap-3 mb-[10px]">
+                            <span class="h-[25px] w-[25px] rounded-full bg-thirdly text-white text-center leading-[25px]"><i class="fa-solid fa-check"></i></span>
+                            <span class="text-primary font-inter text-base font-semibold">Delivery from 12 Hours</span>
+                        </div>
+                        <div class="hero_services_item flex gap-3 mb-[10px]">
+                            <span class="h-[25px] w-[25px] rounded-full bg-thirdly text-white text-center leading-[25px]"><i class="fa-solid fa-check"></i></span>
+                            <span class="text-primary font-inter text-base font-semibold">Instant Online Quotations</span>
+                        </div>
+                    </div>
+                    <button class="hidden lg:inline-block text-white text-center font-inter text-base font-semibold leading-[24px] py-7 px-[70px] rounded-full bg-primary hover:bg-thirdly transition-all ease-linear duration-500">Order your translation</button>
+                </div>
+                <div class="col lg:w-[58vw] relative">
+                    <img class="block lg:hidden" src="./src/img/carousel2.png" alt="images">
+                    <img class="hidden lg:block" src="./src/img/carousel.png" alt="images">                    
+                </div>
+                <div class="col mt-10 lg:hidden">
+                    <button class="lg:hidden text-white text-center font-inter text-base font-semibold leading-[24px] py-7 px-[100px]  rounded-full bg-primary hover:bg-thirdly transition-all ease-linear duration-500">Order your translation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =====| Hero end |===== -->
+    <!-- =====| brand start |===== -->
+    <section id="brand" class="brand bg-secondery">
+        <div class="row">
+            <div class="container flex items-center rounded-lg ">
+                <div class="col w-[30%] hidden lg:block">
+                    <p class="font-inter text-xl font-semibold">Trusted by Thousands Globally</p>
+                </div>
+                <div class="col w-full lg:w-[70%]">
+                    <div class="brand_logos bg-white inline-flex w-full lg:min-h-[auto] px-12 py-8 rounded-xl shadow-md overflow-hidden">
+                        <div class="brand_logos_slide">
+                            <a href="#"><img src="./src/img/Eurostar-Logo-New 1.png" alt="img" class="inline-block"></a>
+                            <a href="#"><img src="./src/img/OakNorth_Bank_logo 1.png" alt="img" class="inline-block"></a>
+                            <a href="#"><img src="./src/img/Logo_VE_bleu_Rouge 1.png" alt="img" class="inline-block"></a>
+                            <a href="#"><img src="./src/img/TFL-Logo-external-002-720x221 1.png" alt="img" class="inline-block"></a>
+                            <a href="#"><img src="./src/img/KPMG_logo 1.png" alt="img" class="inline-block"></a>
+                            <a href="#"><img src="./src/img/Fieldfisher-logo-CMYK 1.png" alt="img" class="inline-block"></a>
+                        </div>
+                        
+                        <!-- <div class="test">
+                            <a href="#"><img src="./src/img/Eurostar-Logo-New 1.png" alt="img" class="inline-block"></a>
+                            <a href="#"><img src="./src/img/OakNorth_Bank_logo 1.png" alt="img" class="inline-block"></a>
+                            <a href="#"><img src="./src/img/Logo_VE_bleu_Rouge 1.png" alt="img" class="inline-block"></a>
+                            <a href="#"><img src="./src/img/TFL-Logo-external-002-720x221 1.png" alt="img" class="inline-block"></a>
+                            <a href="#"><img src="./src/img/KPMG_logo 1.png" alt="img" class="inline-block"></a>
+                            <a href="#"><img src="./src/img/Fieldfisher-logo-CMYK 1.png" alt="img" class="inline-block"></a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =====| brand end |===== -->
+    <!-- =====| card start |===== -->
+    <section id="card_area" class="card bg-secondery py-[70px]">
+        <div class="row">
+            <div class="container">
+                <div class="col flex items-center justify-center flex-wrap gap-10">
+                    <div class="card bg-white rounded-lg shadow w-full max-w-[500px] p-[60px]">
+                        <span class="card_icon h-[35px]"><img class="mb-5" src="./src/img/card_icon1.png" alt="icon"></span>
+                        <h1 class="text-primary font-inter text-[26px] max-w-[280px] font-semibold leading-[36px] mb-[32px]">Standard Translation from £30.00 / page</h1>
+                        <p class="text-primary font-inter text-xl leading-[30px] font-normal mb-5">Suitable for straightforward personal documents, including birth, marriage, police or academic certificates.</p>
+                        <div class="card_list mb-[50px] ">
+                            <div class="card_list_item flex gap-3 mb-[10px]">
+                                <span class="h-[25px] w-[25px] rounded-full bg-thirdly text-white text-center leading-[25px]"><i class="fa-solid fa-check"></i></span>
+                                <span class="text-primary font-inter text-base font-semibold">Translation Style: Literal (word-for-word) </span>
+                            </div>
+                            <div class="card_list_item flex gap-3 mb-[10px]">
+                                <span class="h-[25px] w-[25px] rounded-full bg-thirdly text-white text-center leading-[25px]"><i class="fa-solid fa-check"></i></span>
+                                <span class="text-primary font-inter text-base font-semibold">Delivery Format: PDF</span>
+                            </div>
+                            <div class="card_list_item flex gap-3 mb-[10px]">
+                                <span class="h-[25px] w-[25px] rounded-full bg-thirdly text-white text-center leading-[25px]"><i class="fa-solid fa-check"></i></span>
+                                <span class="text-primary font-inter text-base font-semibold">Professional Translator</span>
+                            </div>
+                            <div class="card_list_item flex gap-3 mb-[10px]">
+                                <span class="h-[25px] w-[25px] rounded-full bg-thirdly text-white text-center leading-[25px]"><i class="fa-solid fa-check"></i></span>
+                                <span class="text-primary font-inter text-base font-semibold">Translation Revisions</span>
+                            </div>
+                            <div class="card_list_item flex gap-3 mb-[10px]">
+                                <span class="h-[25px] w-[25px] rounded-full bg-thirdly text-white text-center leading-[25px]"><i class="fa-solid fa-check"></i></span>
+                                <span class="text-primary font-inter text-base font-semibold">Signed & Stamped Certification</span>
+                            </div>
+                        </div>
+                        <div class="cardBtn flex items-center gap-4">
+                            <a href="#" class="text-white text-center font-inter text-base font-semibold leading-[24px] py-4 px-[30px]  rounded-full bg-primary hover:bg-thirdly transition-all ease-linear duration-500">Check Prices</a>
+                            <a href="#"><span class="text-primary font-inter text-base font-semibold underline">Learn more</span></a>
+                        </div>
+                    </div>
+                    <div class="card bg-white rounded-lg shadow w-full max-w-[500px] p-[60px]">
+                        <span class="card_icon h-[35px] mb-5"><img class="mb-5" src="./src/img/card_icon2.png" alt="icon"></span>
+                        <h1 class="text-primary font-inter text-[26px] max-w-[280px] font-semibold leading-[36px] mb-[32px]">Standard Translation from £30.00 / page</h1>
+                        <p class="text-primary font-inter text-xl leading-[30px] font-normal mb-5">Suitable for straightforward personal documents, including birth, marriage, police or academic certificates.</p>
+                        <div class="card_list mb-[50px] ">
+                            <div class="card_list_item flex gap-3 mb-[10px]">
+                                <span class="h-[25px] w-[25px] rounded-full bg-thirdly text-white text-center leading-[25px]"><i class="fa-solid fa-check"></i></span>
+                                <span class="text-primary font-inter text-base font-semibold">Translation Style: Literal (word-for-word) </span>
+                            </div>
+                            <div class="card_list_item flex gap-3 mb-[10px]">
+                                <span class="h-[25px] w-[25px] rounded-full bg-thirdly text-white text-center leading-[25px]"><i class="fa-solid fa-check"></i></span>
+                                <span class="text-primary font-inter text-base font-semibold">Delivery Format: PDF</span>
+                            </div>
+                            <div class="card_list_item flex gap-3 mb-[10px]">
+                                <span class="h-[25px] w-[25px] rounded-full bg-thirdly text-white text-center leading-[25px]"><i class="fa-solid fa-check"></i></span>
+                                <span class="text-primary font-inter text-base font-semibold">Professional Translator</span>
+                            </div>
+                            <div class="card_list_item flex gap-3 mb-[10px]">
+                                <span class="h-[25px] w-[25px] rounded-full bg-thirdly text-white text-center leading-[25px]"><i class="fa-solid fa-check"></i></span>
+                                <span class="text-primary font-inter text-base font-semibold">Translation Revisions</span>
+                            </div>
+                            <div class="card_list_item flex gap-3 mb-[10px]">
+                                <span class="h-[25px] w-[25px] rounded-full bg-thirdly text-white text-center leading-[25px]"><i class="fa-solid fa-check"></i></span>
+                                <span class="text-primary font-inter text-base font-semibold">Signed & Stamped Certification</span>
+                            </div>
+                        </div>
+                        <div class="cardBtn flex items-center gap-4">
+                            <a href="#" class="text-white text-center font-inter text-base font-semibold leading-[24px] py-4 px-[30px]  rounded-full bg-primary hover:bg-thirdly transition-all ease-linear duration-500">Check Prices</a>
+                            <a href="#"><span class="text-primary font-inter text-base font-semibold underline">Learn more</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =====| card end |===== -->
+    <!-- =====| quality start |===== -->
+    <section id="quality" class="quality bg-[url('../img/quality_bg.png')] bg-center bg-no-repeat bg-cover">
+        <div class="row">
+            <div class="container">
+                <div class="col">
+                    <h2 class="text-white text-center font-sans text-[60px] font-bold leading-[65px] py-[218px]">Quality and deadlines assured, with
+                        flexible options for urgent projects.</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =====| quality end |===== -->
+
+
+    <!-- =====| footer start |===== -->
+    <!-- =====| footer end |===== -->
+    <!-- ==========| js |========== -->
+    <script src="./src/js/main.js"></script>
+    <script src="./src/js/all.min.js"></script>
+</body>
+</html>

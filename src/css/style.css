@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* ======| Google Fonts |====== */
+/* inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* ======| Common css start |====== */
+.container{
+    width: 95%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+/* // tablet */
+@media all and (min-width: 767px) and (max-width: 1023px) {    
+    .container{
+        width: 90%;
+        max-width: 960px;
+    }
+}
+/* // laptop and small desktop */
+@media all and (min-width: 1024px) and (max-width: 1199px) {    
+    .container{
+        width: 90%;
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+}
+/* // large desktop */
+@media all and (min-width: 1200px) {    
+    .container{
+        width: 90%;
+        max-width: 1920px;
+    }
+}
+/* // largest desktop */
+@media all and (min-width: 2560px) {    
+    .container{
+        width: 90%;
+        max-width: 4080px;
+    }
+}
+/* =====| Common css end |===== */
+/* ======| Navbar css start |====== */
+/* topNavbar */
+.topNavItem a,.bottomNavItem a{
+    position: relative;
+    transition: all linear 0.5s;
+}
+.topNavItem a::after,.bottomNavItem a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #00303F;
+    transition: all ease-out 0.2s;
+}
+.topNavItem a:hover::after,.bottomNavItem a:hover::after{    
+    width: 80%;
+}
+.topNavItem a:last-child:hover:after,.bottomNavItem a:last-child:hover:after{    
+    width: 0;
+}
+#language-picker-select{
+    background: transparent;
+    padding: 12px; 
+}
+/* bottomNavbar */
+.bottomNavItem a{
+    width: fit-content;
+}
+.bottomNavItem a:last-child:hover{
+    color: #fff;
+}
+/* ======| Navbar css end |====== */
+/* ======| brand start |====== */
+.brand_logos_slide {
+    white-space: nowrap;
+    animation: slide 10s linear infinite;
+}
+.brand_logos_slide a{
+        margin-right: 40px;
+}
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-150%);
+    }
+} 
+/* ======| brand end |====== */
+
+/* ======| quality css start |====== */
+/* ======| quality css end |====== */
+/* ======| quality css start |====== */
+/* ======| quality css end |====== */
+/* ======| quality css start |====== */
+/* ======| quality css end |====== */
+/* ======| quality css start |====== */
+/* ======| quality css end |====== */
